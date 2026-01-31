@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Booking System</title>
+    <link rel="stylesheet" href="cinema.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎬 Cinema Booking</h1>
+    <a href="admin.html" class="admin-link">🔐 Admin Login</a>
+
+    <!-- Movie -->
+    <label>Movie</label>
+    <select id="movie">
+      <option value="2500">Avengers: Endgame (₦2500)</option>
+        <option value="2000">Spider-Man: No Way Home (₦2000)</option>
+        <option value="2200">Black Panther: Wakanda Forever (₦2200)</option>
+        <option value="1800">Doctor Strange (₦1800)</option>
+        <option value="1500">Fast & Furious 9 (₦1500)</option>
+        <option value="1700">Mission Impossible (₦1700)</option>
+        <option value="1600">Jurassic World (₦1600)</option>
+        <option value="1400">The Batman (₦1400)</option>
+        <option value="1300">Avatar (₦1300)</option>
+        <option value="1200">John Wick (₦1200)</option>
+    </select>
+
+    <!-- Show Time -->
+    <label>Show Time</label>
+    <select id="time">
+        <option>10:00 AM</option>
+        <option>2:00 PM</option>
+        <option>6:00 PM</option>
+        <option>9:00 PM</option>
+    </select>
+  
+   <p id="seatInfo"></p>
+
+    <!-- Seat Selection -->
+<label>Select Seats</label>
+<select id="seats" multiple size="6">
+    <!-- Row A -->
+    <option value="A1">A1</option>
+    <option value="A2">A2</option>
+    <option value="A3">A3</option>
+    <option value="A4">A4</option>
+    <option value="A5">A5</option>
+    <option value="A6">A6</option>
+    <option value="A7">A7</option>
+    <option value="A8">A8</option>
+    <option value="A9">A9</option>
+    <option value="A10">A10</option>
+
+    <!-- Row B -->
+    <option value="B1">B1</option>
+    <option value="B2">B2</option>
+    <option value="B3">B3</option>
+    <option value="B4">B4</option>
+    <option value="B5">B5</option>
+    <option value="B6">B6</option>
+    <option value="B7">B7</option>
+    <option value="B8">B8</option>
+    <option value="B9">B9</option>
+    <option value="B10">B10</option>
+
+    <!-- Row C -->
+    <option value="C1">C1</option>
+    <option value="C2">C2</option>
+    <option value="C3">C3</option>
+    <option value="C4">C4</option>
+    <option value="C5">C5</option>
+    <option value="C6">C6</option>
+    <option value="C7">C7</option>
+    <option value="C8">C8</option>
+    <option value="C9">C9</option>
+    <option value="C10">C10</option>
+</select>
+
+<small>Hold to select multiple seats</small>
+
+    <button class="book" onclick="bookTicket()">Book Ticket</button>
+</div>
+
+<hr>
+
+<h3>💬 Movie Comments</h3>
+
+<textarea id="commentText" rows="3"
+placeholder="Write your comment about the movie..."></textarea>
+
+<button onclick="addComment()">Post Comment</button>
+
+<div id="comments"></div>
+
+ <div id="receipt" style="display:none; margin-top:15px;">
+    <button onclick="downloadReceipt()">⬇️ Download Receipt (PDF)</button>
+</div>
+
+<script src="cinema.js"></script>
+</body>
+</html>
