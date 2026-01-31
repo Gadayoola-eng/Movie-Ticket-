@@ -1,0 +1,85 @@
+body {
+    font-family: Arial;
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+
+.container, .admin {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.book {
+    background: orange;
+    border: none;
+    font-weight: bold;
+}
+
+.admin-login input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.admin-login button {
+    background: green;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#loginMsg {
+    color: red;
+    text-align: center;
+}
+
+   select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+  
+   .admin-link {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-link:hover {
+    text-decoration: underline;
+}
+  
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+#comments {
+    margin-top: 10px;
+}
+
+.comment {
+    border: 1px solid #555;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
