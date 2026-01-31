@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="cinema.css">
+</head>
+<body>
+
+<div class="admin-login" id="adminLogin">
+    <h2>🔐 Admin Login</h2>
+
+   <p id="seatInfo"></p>
+  
+    <input type="text" id="adminUser" placeholder="Username">
+    <input type="password" id="adminPass" placeholder="Password">
+
+    <button onclick="adminLogin()">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<div class="admin" id="adminPanel" style="display:none;">
+    <h2>📋 Admin Dashboard</h2>
+  
+   <h3>🎬 Manage Movies & Show Times</h3>
+
+<input type="text" id="movieName" placeholder="Movie name">
+
+<input type="text" id="movieTimes" 
+placeholder="Show times (comma separated e.g 10AM,2PM,6PM)">
+
+<button onclick="addMovie()">➕ Add / Update Movie</button>
+
+<div id="movieList"></div>
+
+<hr>
+
+    <button onclick="loadBookings()">View Bookings</button>
+    <button onclick="clearBookings()">Clear All Bookings</button>
+  <hr>
+<h3>💬 User Comments</h3>
+<button onclick="loadAllComments()">View Comments</button>
+<div id="adminComments"></div>
+
+    <button onclick="logout()">Logout</button>
+
+    <div id="bookings"></div>
+</div>
+
+<script src="cinema.js"></script>
+</body>
+</html>
